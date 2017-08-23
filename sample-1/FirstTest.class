@@ -1,0 +1,30 @@
+package com.example.plane;
+
+import android.os.Bundle;
+import org.cocos2dx.lib.Cocos2dxActivity;
+import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
+
+public class FirstTest
+  extends Cocos2dxActivity
+{
+  static
+  {
+    System.loadLibrary("cocos2dcpp");
+  }
+  
+  protected void onCreate(Bundle paramBundle)
+  {
+    super.onCreate(paramBundle);
+    new a(this, "flag").d("YmF6aW5nYWFhYQ==");
+    new a(this, "Cocos2dxPrefsFile").d("N0");
+  }
+  
+  public Cocos2dxGLSurfaceView onCreateView()
+  {
+    Cocos2dxGLSurfaceView localCocos2dxGLSurfaceView = new Cocos2dxGLSurfaceView(this);
+    new a(this, "Cocos2dxPrefsFile").d("MG");
+    localCocos2dxGLSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
+    return localCocos2dxGLSurfaceView;
+  }
+}
+
